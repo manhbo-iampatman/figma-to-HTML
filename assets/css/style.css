@@ -430,10 +430,16 @@ background: var(--manhbo-color);
   background: #2E2100;
 }
 
-.feedback .feedback-item{
+.feedback-list{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+}
+
+
+.feedback-item{
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar{
@@ -483,7 +489,8 @@ line-height: 1.86; /* 185.714% */
 }
 
 .feedback-item .content{
-  width: 66%;
+  width: 66% ;
+  margin-left: auto;
 }
 
 .feedback-item .content blockquote{
