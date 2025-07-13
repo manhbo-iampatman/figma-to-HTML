@@ -656,8 +656,33 @@ line-height: 1.75; /* 175% */
 
 .blogs .item .btn{
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover{
   background: var(--manhbo-color);
+}
+
+.blogs .dots{
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.blogs .dot{
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: #5F5B53;
+cursor: pointer;
+}
+
+.blogs .dot:hover{
+  background: var(--manhbo-color);
+}
+
+.blogs .dot.active{
+  background: var(--manhbo-color);
+  cursor: default;
 }
